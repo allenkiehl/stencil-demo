@@ -1,0 +1,68 @@
+:host {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.card {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.card .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card .subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.card-dark {
+  background-color: #16161d !important;
+  color: #fff !important;
+}
+
+.card-dark .subtitle,
+.card-dark .subtitle a {
+  color: #fff !important;
+}
+
+.card-light {
+  background-color: #fff;
+  color: #16161d !important;
+  border: 1px solid #eee;
+}
+.videoContainerResponsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.videoContainerResponsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.noVideoFound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: #fff;
+  text-align: center;
+  line-height: 75px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Demo</title>
+    <script type="module" src="/build/takehome.esm.js"></script>
+    <script nomodule src="/build/takehome.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+      .col-md-4 {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      .demoHeader {
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      .demoLabel {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .timeDemo {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demoHeader">Responsive Video Embed Demo</div>
+    <div class="row align-items-start">
+      <div class="col-md-4">
+        <div class="demoLabel">Dark Theme</div>
+        <video-embed
+          title="Ionic React Crash Course"
+          subtitle="<a target='_blank' href='https://ionicframework.com/react'>Start building an Ionic app with React &#x2192;</a>​"
+          url="https://www.youtube.com/embed/-aHBhvkrFlY"
+          isdark
+        ></video-embed>
+      </div>
+      <div class="col-md-4">
+        <div class="demoLabel">Light Theme</div>
+        <video-embed title="Ionic: The Evolution Of A Hybrid Framework" url="https://player.vimeo.com/video/168521723"></video-embed>
+      </div>
+
+      <div class="col-md-4">
+        <div class="demoLabel">Video Not Loaded</div>
+        <video-embed title="Ionic: The Evolution Of A Hybrid Framework"></video-embed>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="timeDemo demoHeader">Date Time Formatter Demo</div>
+    <div class="row align-items-start">
+      <div class="col-md-4">
+        <div class="demoLabel">Default DateTimeFormatter Formatting</div>
+        <datetime-formatter timestamp="2021-04-03T18:30:00-05:00"></datetime-formatter>
+      </div>
+      <div class="col-md-4">
+        <div class="demoLabel">Custom DateTimeFormatter Formatting</div>
+        <datetime-formatter timestamp="2021-04-03T18:30:00-05:00" format="MM/DD/YY"></datetime-formatter>
+      </div>
+      <div class="col-md-4">
+        <div class="demoLabel">Time Ago DateTimeFormatter Formatting</div>
+        <datetime-formatter timestamp="2021-04-03T18:30:00-05:00" displaytype="ago"></datetime-formatter>
+      </div>
+    </div>
+  </body>
+</html>
